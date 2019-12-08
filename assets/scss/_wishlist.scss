@@ -1,0 +1,199 @@
+/*----------------------------------------*/
+/*  14. Wishlist CSS
+/*----------------------------------------*/
+
+.table{
+	margin-bottom: 0;
+	thead{
+		background-color: #f7f7f7;
+	}
+	thead th, th{
+		padding: 13px 0;
+		font-weight: 400;
+		border-top-width: 0;
+		border-bottom-width: 0;
+        vertical-align: middle;
+        font-size: 12px;
+		color: $heading-color;
+	}
+	td{
+		vertical-align: middle;
+		border: 0px solid $heading-color;
+	}
+	th, td{
+		&.wide-column{
+			min-width: 230px;
+		}
+	}
+	tbody{
+		td{
+			padding: 29px 0;
+			border-bottom: 1px solid #dadada;
+			min-width: 120px;
+			&.product{
+				&-remove{
+					min-width: 30px;
+					.remove{
+						&:before{
+						    font-family: 'dliconoutline';
+                            content: "\ed2b";
+						    font-size: 16px;
+                        }
+                        &:hover{
+                            color: $theme-color-two;
+                        }
+					}
+				}
+				&-thumbnail{
+					background-color: transparent;;
+					width: 90px;
+					img{
+						width: 70px;
+						height: auto;
+					}
+				}
+				&-name{
+					h3{
+						font-size: 14px;
+						font-weight: 400;
+						margin: 0;
+					}
+                }
+                &-stock{
+                    color: $heading-color;
+                }
+                &-out_stock{
+                    color: $theme-color-two;
+                }
+				&-price, &-total-price{
+					.product-price-wrapper{
+						.money{
+							font-size: 16px;
+                            color: $heading-color;
+                            font-weight: 700;
+						}
+					}
+				}
+				&-quantity{
+					display: table-cell;
+					.quantity{
+						margin-left: auto;
+						margin-right: auto;
+					}
+				}
+			}
+		}
+	}
+	&.shop_attributes{
+		th,td{
+			padding: 4px 0;
+			text-transform: none;
+			a{
+				color: $body-color;
+				&:hover{
+					color: $theme-color-two;
+				}
+			}
+		}
+		td{
+			font-size: 12px;
+		}
+		th{
+			min-width: 140px;
+		    border: transparent;
+		    color: $body-color;
+		    font-weight: 400;
+            background-color: transparent;
+			font-size: 12px;
+		}
+	}
+	&.order-table{
+		thead{
+			background-color: transparent;
+		}
+		th{
+			background-color: transparent;
+			color: $heading-color;
+			border: none !important;
+			strong{
+				font-size: 12px;
+			}
+		}
+		th, td{
+			padding-left: 0;
+		}
+		td{
+            font-size: 14px;
+            border: none;
+			padding: 15px 0;
+		}
+	}
+	&.product-table{
+		thead{
+			th{
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+		.product{
+			&-remove{
+				min-width: 40px;
+			}
+			&-thumbnail{
+				img{
+					width: 70px;
+				}
+			}
+		}
+	}
+	&.compare-table{
+		tbody{
+			tr{
+				&:last-child{
+					th{
+						border-bottom: 1px solid $heading-color;
+					}
+				}
+			}
+			th, td{
+				border-width: 1px;
+				padding: 10px;
+			}
+			th{
+			    min-width: 200px;
+			    vertical-align: middle;
+			    border-color: $heading-color;
+			    border-left: 1px solid $heading-color;
+			    padding-left: 20px;
+			    color: $heading-color;
+			    font-weight: 700;
+			    text-transform: uppercase;
+			    font-size: 16px;
+			    letter-spacing: 0;
+			}
+			td{
+			    min-width: 250px;
+			    border-color: $heading-color;
+			    text-align: center;
+			    vertical-align: middle;
+			    line-height: 1.4;
+			}
+			.remove{
+				a{ 
+					
+				}
+			}
+			.product-name{
+			    font-size: 14px;
+			    margin: 20px 0;
+			}
+		}
+	}
+	&.wishlist-table{
+		tbody{
+			td{
+				border-bottom: 1px solid $heading-color;
+			}
+		}
+	}
+}

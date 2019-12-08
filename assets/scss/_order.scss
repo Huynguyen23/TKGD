@@ -1,0 +1,72 @@
+/*----------------------------------------*/
+/*  25. Order CSS
+/*----------------------------------------*/
+.order-tracking-form-area{
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center;
+    // Responsive
+    @media #{$laptop-device}{
+        padding: 0px 80px 0px 80px;
+    }
+    @media #{$desktop-device}{
+        padding: 0px 40px 0px 40px;
+    }
+    @media #{$tablet-device}{
+        padding: 55px 0px 60px 0px;
+    }
+    @media #{$large-mobile}{
+        padding: 45px 15px 50px 15px;
+    }
+    & form{
+        & p{
+            font-size: 14px;
+            line-height: 24px;
+            color: $heading-color;
+            margin-bottom: 30px;
+            // Responsive
+            @media #{$desktop-device}{
+                margin-bottom: 20px;
+            }
+            @media #{$large-mobile}{
+                margin-bottom: 20px;
+            }
+        }
+        & .single-input{
+            margin-bottom: 30px;
+            // Responsive
+            @media #{$desktop-device}{
+                margin-bottom: 20px;
+            }
+            @media #{$large-mobile}{
+                margin-bottom: 20px;
+            }
+            & label{
+                display: block;
+                font-size: 14px;
+                line-height: 24px;
+                color: $heading-color;
+                text-align: left;
+                margin-bottom: 8px;
+            }
+            & input{
+                width: 100%;
+                height: 70px;
+                padding: 10px 20px;
+                font-size: 14px;
+                text-align: left;
+                border: 1px solid #CDCDCD;
+                // Responsive
+                @media #{$desktop-device}{
+                    height: 50px;
+                }
+                @media #{$large-mobile}{
+                    height: 50px;
+                }
+                &:focus{
+                    border-color: $heading-color;
+                }
+            }
+        }
+    }
+}

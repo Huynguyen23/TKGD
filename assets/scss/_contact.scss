@@ -1,0 +1,96 @@
+/*---------------------------------------
+    30. Contact CSS
+-----------------------------------------*/
+
+/*-- Map --*/
+.ht-gmap2 {
+    height: 1070px;
+    width: 100%;
+    // Responsive
+    @media #{$laptop-device}{
+        height: 910px;
+    }
+    @media #{$laptop-device}{
+        height: 910px;
+    }
+    @media #{$desktop-device}{
+        height: 895px;
+    }
+    
+    @media #{$tablet-device} {
+        height: 500px;
+    }
+
+    @media #{$large-mobile} {
+        height: 400px;
+    }
+}
+/*-- Contact Form --*/
+.contact__form--3 {
+    padding: 160px 80px;
+    background-color: #fff;
+    // Responsive
+    @media #{$laptop-device} {
+        padding: 80px 40px;
+    }
+    @media #{$desktop-device} {
+        padding: 70px 35px;
+    }
+    @media #{$tablet-device} {
+        padding: 60px 15px;
+        padding-top: 0px;
+    }
+    @media #{$large-mobile} {
+        padding: 50px 15px;
+        padding-top: 0px;
+    }
+    input {
+        font-size: 18px;
+        padding: 0 0 15px;
+        margin: 50px 0 10px;
+        border-style: solid;
+        border-width: 0 0 2px;
+        border-color: #2f2f2f;
+        height: auto;
+        width: 100%;
+        // Responsive
+        @media #{$large-mobile}{
+            margin-top: 40px;
+        }
+        &[type=submit] {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 20px;
+            padding: 30px;
+            border-radius: 0;
+            display: block;
+            width: 100%;
+            margin: 25px 0 0;
+            background-color: $heading-color;
+            text-decoration: none;
+            color: $white;
+            border-color: transparent;
+            &:hover {
+                background-color: $theme-color-two;
+                color: $white;
+            }
+        }
+    }
+
+    select{
+        @extend input;
+    }
+    textarea {
+        @extend input;
+        height: 150px;
+        min-height: 150px;
+    }
+}
+.form-messege.success {
+	color: #1dbc51;
+	font-weight: 700;
+}
+.form-messege.error{
+    color: #ff1313;
+}

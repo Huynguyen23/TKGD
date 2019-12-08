@@ -1,0 +1,1820 @@
+/*----------------------------------------*/
+/*  06. Banner CSS
+/*----------------------------------------*/
+.height{
+    height: 1020px;
+    // Responsive 
+    @media #{$laptop-device}{
+        height: 520px;
+    }
+    @media #{$desktop-device}{
+        height: 480px;
+    }
+    @media #{$tablet-device}{
+        height: 380px;
+    }
+    @media #{$large-mobile}{
+        height: 280px;
+    }
+}
+.modern-decorate-banner-content{
+    // Responsive
+    @media #{$large-mobile}{
+        text-align: center;
+    }
+    & h2{
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 74px;
+        color: $white;
+        margin-left: 160px;
+        // Responsive 
+        @media #{$laptop-device}{
+            margin-left: 0px;
+        }
+        @media #{$desktop-device}{
+            margin-left: 0px;
+            font-size: 38px;
+            line-height: 60px;
+        }
+        @media #{$tablet-device}{
+            margin-left: 0px;
+            font-size: 38px;
+            line-height: 60px;
+        }
+        @media #{$large-mobile}{
+            margin-left: 0px;
+            font-size: 24px;
+            line-height: 38px;
+        }
+    }
+    & .shop-btn{
+        margin-top: 20px;
+        margin-left: 160px;
+        // Responsive 
+        @media #{$laptop-device}{
+            margin-left: 0px;
+        }
+        @media #{$desktop-device}{
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        @media #{$tablet-device}{
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        @media #{$large-mobile}{
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+    }
+}
+
+.single-banner{
+    &.color-white{
+        & .title{
+            font-size: 56px;
+            font-weight: 400;
+            color: $white;
+            text-transform: capitalize;
+            text-align: center;
+            letter-spacing: 1px;
+            z-index: 9;
+            // Responsive
+            @media #{$desktop-device}{
+                font-size: 32px;
+                line-height: 45px;
+            }
+            @media #{$tablet-device}{
+                font-size: 32px;
+                line-height: 45px;
+            }
+            @media #{$large-mobile}{
+                font-size: 24px;
+                line-height: 32px;
+            }
+            &.left{
+                left: 80px;
+                transform: translateY(-85%);
+                text-align: left;
+                // Responsive
+                @media #{$tablet-device}{
+                    left: 40px;
+                    transform: translateY(0);
+                }
+                @media #{$large-mobile}{
+                    left: 20px;
+                    transform: translateY(0);
+                }
+            }
+            &.right{
+                right: 80px;
+                transform: translateY(-85%);
+                text-align: right;
+                // Responsive
+                @media #{$tablet-device}{
+                    right: 40px;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+    &.color-white-two{
+        & .title{
+            font-size: 36px;
+            font-weight: 400;
+            color: $white;
+            text-transform: capitalize;
+            text-align: center;
+            letter-spacing: 1px;
+            z-index: 9;
+            bottom: auto;
+            top: 85%;
+            transform: translateY(-85%);
+            left: 80px;
+            // Responsive
+            @media #{$laptop-device}{
+                font-size: 28px;
+                line-height: 39px;
+                bottom: auto;
+                top: 85%;
+                left: 60px !important;
+                transform: translateY(-85%) !important;
+            }
+            @media #{$desktop-device}{
+                font-size: 28px;
+                line-height: 39px;
+                bottom: auto;
+                top: 85%;
+                left: 40px !important;
+                transform: translateY(-85%) !important;
+            }
+            @media #{$tablet-device}{
+                font-size: 28px;
+                line-height: 39px;
+                bottom: auto;
+                top: 85%;
+                left: 30px !important;
+                transform: translateY(-85%) !important;
+            }
+            @media #{$large-mobile}{
+                font-size: 24px;
+                line-height: 30px;
+                bottom: auto;
+                top: 85%;
+                left: 20px !important;
+                transform: translateY(-85%) !important;
+            }
+        }
+    }
+    &.banner-style-two{
+        & .title{
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: 400;
+            color: $white;
+            text-transform: capitalize;
+            text-align: center;
+            letter-spacing: 1px;
+            z-index: 9;
+            // Responsive
+            @media #{$laptop-device}{
+                font-size: 30px;
+                line-height: 45px;
+            }
+            @media #{$desktop-device}{
+                font-size: 22px;
+                line-height: 30px;
+            }
+            @media #{$tablet-device}{
+                font-size: 20px;
+                line-height: 26px;
+            }
+            @media #{$large-mobile}{
+                font-size: 20px;
+                line-height: 26px;
+            }
+            &.left{
+                display: block;
+                bottom: auto;
+                top: 100%;
+                left: 50px;
+                opacity: 0;
+                text-align: left;
+                transition: all 0.3s ease-in-out;
+                // Responsive
+                @media #{$laptop-device}{
+                    left: 25px;
+                }
+                @media #{$desktop-device}{
+                    left: 20px;
+                }
+                @media #{$tablet-device}{
+                    left: 10px;
+                }
+                @media #{$large-mobile}{
+                    left: 20px;
+                }
+            }
+        }
+        &:hover{
+            & .title{
+                &.left{
+                    opacity: 1;
+                    transform: translateY(-100%);
+                    margin-top: -50px;
+                    // Responsive
+                    @media #{$tablet-device}{
+                        margin-top: -20px;
+                    }
+                    @media #{$large-mobile}{
+                        margin-top: -20px;
+                    }
+                }
+            }
+        }
+    }
+    & .banner-img{
+        & a{
+            display: block;
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #000;
+                z-index: 1;   
+                opacity: 0;    
+                transition: .3s;
+            }
+            & img{
+                width: 100%;
+                transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+            }
+        }
+    }
+    & .title{
+        bottom: 10%;
+        position: absolute;
+        left: 0px;
+        right: 0;
+        transition: opacity 0.35s, transform 0.35s;
+        max-width: 100%;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        transition: .3s;
+        // Responsive
+        @media #{$laptop-device}{
+            font-size: 18px;
+            bottom: 5%;
+        }
+        @media #{$desktop-device}{
+            font-size: 18px;
+            bottom: 5%;
+            letter-spacing: 0px;
+        }
+        @media #{$tablet-device}{
+            font-size: 16px;
+            bottom: 5%;
+            letter-spacing: 0px;
+        }
+        @media #{$large-mobile}{
+            font-size: 16px;
+            bottom: 5%;
+            letter-spacing: 0px;
+        }
+        &.left{
+            left: 80px;
+            transform: translateY(-85%);
+            text-align: left;
+            // Responsive
+            @media #{$laptop-device}{
+                transform: translateY(0);
+            }
+            @media #{$desktop-device}{
+                transform: translateY(0);
+            }
+            @media #{$tablet-device}{
+                left: 10px;
+                transform: translateY(0);
+            }
+            @media #{$large-mobile}{
+                left: 10px;
+                transform: translateY(0);
+            }
+        }
+        &.right{
+            right: 80px;
+            transform: translateY(-85%);
+            text-align: right;
+            // Responsive
+            @media #{$laptop-device}{
+                transform: translateY(0);
+            }
+            @media #{$desktop-device}{
+                transform: translateY(0);
+            }
+            @media #{$tablet-device}{
+                right: 10px;
+                transform: translateY(0);
+            }
+            @media #{$large-mobile}{
+                right: 10px;
+                transform: translateY(0);
+            }
+        }
+    }
+    &:hover{
+        & .banner-img{
+            a{
+                &::before{
+                    opacity: 0.4;
+                }
+                & img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        & .title{
+            letter-spacing: 1px; 
+            // Responsive
+            @media #{$tablet-device}{
+                letter-spacing: 0px;
+            }
+            @media #{$large-mobile}{
+                letter-spacing: 0px;
+            }
+        }
+        
+    }
+}
+// Single Banner Content CSS
+.single-content-banner{
+    position: relative;
+    overflow: hidden;
+    & .banner-images{
+        & a{
+            display: block;
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #000;
+                z-index: 1;
+                opacity: 0;
+                transition: .3s;
+            }
+            & img{
+                width: 100%;
+                transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+            }
+        }
+    }
+    & .banner-content{
+        top: 100%;
+        position: absolute;
+        height: auto;
+        left: 80px;
+        width: 460px;
+        max-width: 100%;
+        background-color: rgba(26, 26, 26, 0.9);
+        padding: 50px;
+        z-index: 5;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        // Responsive
+        @media #{$laptop-device}{
+            padding: 30px;
+        }
+        @media #{$large-mobile}{
+            padding: 15px;
+            left: 0;
+            width: 100%;
+        }
+        &.full-width{
+            width: 100%;
+            left: 0;
+        }
+        & .title{
+            position: relative;
+            font-size: 32px;
+            line-height: 45px;
+            color: $white;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            // Responsive
+            @media #{$laptop-device}{
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+                font-size: 26px;
+                line-height: 36px;
+            }
+            @media #{$large-mobile}{
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                font-size: 22px;
+                line-height: 26px;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                background: #808080;
+                width: 60px;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        & p{
+            font-size: 18px;
+            line-height: 32px;
+            color: $white;
+            margin-bottom: 0;
+            // Responsive
+            @media #{$laptop-device}{
+                font-size: 16px;
+                line-height: 28px;
+            }
+            @media #{$large-mobile}{
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+        & a{
+            font-size: 11px;
+            line-height: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: $white;
+            padding: 20px 0;
+            margin-top: 24px;
+            // Responsive
+            @media #{$laptop-device}{
+                margin-top: 15px;
+            }
+            @media #{$large-mobile}{
+                padding: 10px 0;
+                margin-top: 10px;
+            }
+        }
+    }
+    &:hover{
+        & .banner-images{
+            & a{
+                &::before{
+                    opacity: 0.4;
+                }
+                & img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        & .banner-content{
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 1;
+            &.full-width{
+                top: 100%;
+                transform: translateY(-100%);
+            }
+        }
+    }
+}
+/* Shop Banner Css */
+.single-shop-banner{
+    position: relative;
+    overflow: hidden;
+    & .shop-banner-image{
+            position: relative;
+        & > a{
+            display: block;
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #000;
+                z-index: 1;   
+                opacity: 0;    
+                transition: .3s;
+            }
+            & img{
+                width: 100%;
+                transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+            }
+        }
+        & .shop-banner-content{
+            bottom: 10%;
+            position: absolute;
+            left: 0px;
+            right: 0;
+            max-width: 80%;
+            text-align:  center;
+            margin: 0px auto;
+            z-index: 999;
+            transition: all 0.3s ease-in-out;
+            & span{
+                font-size: 14px;
+                font-weight: 300;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+            }
+            & .title{
+                font-size: 46px;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 1.3em;
+                letter-spacing: 2px;
+                margin: 0px 0px 16px 0px;
+                // Responsive
+                @media #{$desktop-device}{
+                    font-size: 36px;
+                    line-height: 39px;
+                }
+                @media #{$tablet-device}{
+                    font-size: 36px;
+                    line-height: 39px;
+                }
+                @media #{$large-mobile}{
+                    font-size: 36px;
+                    line-height: 39px;
+                }
+            }
+            & .shop-btn{
+                background-color: rgba(26,26,26,0);
+                color: $heading-color;
+                padding: 15px 30px 15px 30px;
+                border: 2px solid $heading-color;
+                font-size: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 12px;
+                display: inline-block;
+                &:hover{
+                    background-color: $heading-color;
+                    color: #ffffff;
+                }
+            }
+        }
+        & .shop-banner-content-two{
+            &.right{
+                left: auto;
+                right: 35px;
+            }
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            left: 80px;
+            text-align:  center;
+            margin: 0px auto;
+            z-index: 999;
+            transition: all 0.3s ease-in-out;
+            // Responsive
+            @media #{$laptop-device}{
+                left: 40px;
+            }
+            @media #{$desktop-device}{
+                left: 40px;
+            }
+            @media #{$tablet-device}{
+                left: 40px;
+            }
+            @media #{$large-mobile}{
+                left: 40px;
+            }
+            & span{
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+            }
+            & .title{
+                font-size: 46px;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 1.3em;
+                letter-spacing: 2px;
+                margin: 0px 0px 16px 0px;
+                // Responsive
+                @media #{$laptop-device}{
+                    font-size: 32px;
+                    line-height: 44px;
+                }
+                @media #{$desktop-device}{
+                    font-size: 32px;
+                    line-height: 44px;
+                }
+                @media #{$tablet-device}{
+                    font-size: 28px;
+                    line-height: 38px;
+                }
+                @media #{$large-mobile}{
+                    font-size: 26px;
+                    line-height: 34px;
+                    margin-bottom: 5px;
+                }
+            }
+            & .shop-btn{
+                background-color: rgba(26,26,26,0);
+                color: $heading-color;
+                padding: 20px 0px 20px 0px;
+                border: 2px solid $heading-color;
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 12px;
+                display: inline-block;
+                width: 180px;
+                // Responsive
+                @media #{$laptop-device}{
+                    font-size: 14px;
+                    padding: 12px 0px 12px 0px;
+                }
+                @media #{$desktop-device}{
+                    font-size: 14px;
+                    padding: 12px 0px 12px 0px;
+                }
+                @media #{$tablet-device}{
+                    font-size: 14px;
+                    padding: 12px 0px 12px 0px;
+                    width: 150px;
+                }
+                @media #{$large-mobile}{
+                    font-size: 14px;
+                    padding: 12px 0px 12px 0px;
+                    width: 150px;
+                }
+            }
+        }
+        & .shop-banner-content-three{
+            &.right{
+                left: auto;
+                right: 35px;
+                // Responsive
+                @media #{$large-mobile}{
+                    right: 30px;
+                }
+            }
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            left: 80px;
+            text-align:  center;
+            margin: 0px auto;
+            z-index: 999;
+            transition: all 0.3s ease-in-out;
+            // Responsive
+            @media #{$laptop-device}{
+                left: 40px;
+            }
+            @media #{$desktop-device}{
+                left: 40px;
+            }
+            @media #{$tablet-device}{
+                left: 40px;
+            }
+            @media #{$large-mobile}{
+                left: 30px;
+            }
+            & span{
+                display: block;
+                font-size: 32px;
+                line-height: 45px;
+                font-weight: 400;
+                color: $heading-color;
+                // Responsive
+                @media #{$laptop-device}{
+                    font-size: 24px;
+                    line-height: 33px;
+                }
+                @media #{$desktop-device}{
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+                @media #{$tablet-device}{
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+                @media #{$large-mobile}{
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+            & .title-big-size{
+                font-size: 130px;
+                font-weight: 400;
+                line-height: 143px;
+                margin: 0px 0px 25px 0px;
+                // Responsive
+                @media #{$laptop-device}{
+                    font-size: 84px;
+                    line-height: 92px;
+                }
+                @media #{$desktop-device}{
+                    font-size: 74px;
+                    line-height: 82px;
+                }
+                @media #{$tablet-device}{
+                    font-size: 56px;
+                    line-height: 61px;
+                }
+                @media #{$large-mobile}{
+                    font-size: 36px;
+                    line-height: 50px;
+                    margin-bottom: 5px;
+                }
+            }
+            & .title{
+                font-size: 64px;
+                font-weight: 400;
+                line-height: 89px;
+                letter-spacing: 2px;
+                margin: 0px 0px 25px 0px;
+                // Responsive
+                @media #{$laptop-device}{
+                    font-size: 36px;
+                    line-height: 50px;
+                }
+                @media #{$desktop-device}{
+                    font-size: 36px;
+                    line-height: 50px;
+                    margin-bottom: 15px;
+                }
+                @media #{$tablet-device}{
+                    font-size: 36px;
+                    line-height: 50px;
+                    margin-bottom: 15px;
+                }
+                @media #{$large-mobile}{
+                    font-size: 36px;
+                    line-height: 50px;
+                    margin-bottom: 5px;
+                }
+            }
+            & .shop-btn{
+                background-color: rgba(26,26,26,0);
+                color: $heading-color;
+                padding: 20px 0px 20px 0px;
+                border: 2px solid rgba(0,0,0,0.3);
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 12px;
+                display: inline-block;
+                width: 180px;
+                // Responsive
+                @media #{$laptop-device}{
+                    font-size: 14px;
+                    padding: 12px 0px 12px 0px;
+                }
+                @media #{$desktop-device}{
+                    font-size: 14px;
+                    padding: 12px 0px 12px 0px;
+                }
+                @media #{$tablet-device}{
+                    font-size: 14px;
+                    padding: 12px 0px 12px 0px;
+                    width: 150px;
+                }
+                @media #{$large-mobile}{
+                    font-size: 14px;
+                    padding: 12px 0px 12px 0px;
+                    width: 150px;
+                }
+            }
+        }
+
+    }
+    & .shop-banner-price{
+        position: absolute;
+        z-index: 1;
+        right: 55px;
+        top: 45%;
+        transform: translateY(-45%);
+        max-width: 160px;
+        z-index: 9;
+        // Responsive
+        @media #{$desktop-device}{
+            left: 20px;
+            top: 10%;
+            transform: translateY(-10%);
+        }
+        @media #{$tablet-device}{
+            left: 20px;
+            top: 10%;
+            transform: translateY(-10%);
+        }
+        @media #{$large-mobile}{
+            left: 20px;
+            top: 10%;
+            transform: translateY(-10%);
+        }
+        & .del-price{
+            display: block;
+            font-size: 18px;
+            font-weight: 400;
+            text-decoration: line-through;
+            text-align: left;
+            color: $heading-color;
+        }
+        & .new-price{
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+            font-style: italic;
+            text-align: left;
+            color: $heading-color;
+        }
+    }
+    &:hover{
+        & .shop-banner-image{
+            a{
+                &::before{
+                    opacity: 0.1;
+                }
+                & img{
+                    transform: scale(1.05);
+                }
+            }
+        }
+        & .title{
+            letter-spacing: 1px; 
+            // Responsive
+            @media #{$tablet-device}{
+                letter-spacing: 0px;
+            }
+            @media #{$large-mobile}{
+                letter-spacing: 0px;
+            }
+        }
+        & .shop-banner-content-two{
+            & .shop-btn{
+                background-color: $heading-color;
+                color: #ffffff;
+            }
+        }
+        & .shop-banner-content-three{
+            & .shop-btn{
+                background-color: $heading-color;
+                color: #ffffff;
+            }
+        }
+        
+        
+    }
+}
+/* Single Shop Banner CSS */
+.single-shop-banner-area{
+    cursor: pointer;
+    & .shop-banner-img{
+        & a{
+            display: block;
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #000;
+                z-index: 1;   
+                opacity: 0;    
+                transition: .3s;
+            }
+            & img{
+                width: 100%;
+                transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+            }
+        }
+    }
+    & .title{
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        right: 35px;
+        transition: opacity 0.35s, transform 0.35s;
+        max-width: 260px;
+        z-index: 9;
+        font-size: 36px;
+        line-height: 50px;
+        color: $heading-color;
+        text-align: left;
+        // Responsive
+        @media #{$desktop-device}{
+            font-size: 28px;
+            line-height: 32px;
+        }
+        @media #{$tablet-device}{
+            font-size: 22px;
+            line-height: 30px;
+            max-width: 220px;
+            right: 5px;
+        }
+        @media #{$large-mobile}{
+            font-size: 22px;
+            line-height: 28px;
+            max-width: 200px;
+            right: 25px;
+            text-align: right;
+        }
+    }
+    &:hover{
+        & .shop-banner-img{
+            a{
+                &::before{
+                    opacity: 0.4;
+                }
+                & img{
+                    transform: scale(1.05);
+                }
+            }
+        }
+        
+    }
+}
+/* Made Banner CSS */
+.made-one-padding{
+    padding: 0px 50px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    // Responsive
+    @media #{$desktop-device}{
+        height: 600px;
+    }
+    @media #{$tablet-device}{
+        height: 500px;
+    }
+    @media #{$large-mobile}{
+        height: 500px;
+    }
+    @media #{$small-mobile}{
+        height: 250px;
+    }
+}
+.made-banner-image{
+    background: #f9f9f9;
+    & img{
+        margin: auto;
+        // Responsive
+        @media #{$large-mobile}{
+            width: 100%;
+        }
+        @media #{$small-mobile}{
+            width: 200px;
+        }
+    }
+}
+.center{
+    img{
+        width: 500px;
+        margin: auto;
+        // Responsive
+        @media #{$large-mobile}{
+            width: 100%;
+        }
+        @media #{$small-mobile}{
+            width: 200px;
+        }
+    }
+}
+.width-615{
+    & img{
+        width: 615px;
+        margin: auto;
+        // Responsive
+        @media #{$large-mobile}{
+            width: 290px;
+        }
+        @media #{$small-mobile}{
+            width: 200px;
+        }
+    }
+}
+.width-311{
+    & img{
+        // Responsive
+        @media #{$desktop-device}{
+            width: 40%;
+        }
+        @media #{$tablet-device}{
+            width: 40%;
+        }
+        @media #{$large-mobile}{
+            width: 40%;
+        }
+        @media #{$small-mobile}{
+            width: 25%;
+        }
+    }
+}
+.made-banner-content{
+    max-width: 560px;
+    margin: auto;
+    padding: 10px;
+    // Responsive
+    @media #{$desktop-device}{
+        padding: 0px 50px 0px 50px;
+    }
+    @media #{$tablet-device}{
+        padding: 0px 50px 0px 50px;
+    }
+    @media #{$large-mobile}{
+        padding: 40px 30px 40px 30px;
+    }
+    & .title{
+        font-size: 56px;
+        line-height: 63px;
+        margin-bottom: 30px;
+        // Responsive
+        @media #{$desktop-device}{
+            font-size: 40px;
+            line-height: 45px;
+        }
+        @media #{$tablet-device}{
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 20px;
+        }
+        @media #{$large-mobile}{
+            font-size: 28px;
+            line-height: 39px;
+            margin-bottom: 15px;
+        }
+    }
+    & p{
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 60px;
+        // Responsive
+        @media #{$tablet-device}{
+            margin-bottom: 40px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 30px;
+        }
+    }
+}
+
+/* Categories Banner CSS */
+.cate-banner-slider{
+    margin-left: 0;
+    margin-right: 0;
+    & .col-md-3{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.single-categories-banner {
+	position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    & .banner-img{
+        & > a{
+            display: block;
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #000;
+                z-index: 1;   
+                opacity: 0;    
+                transition: .3s;
+                // Responsive
+                @media #{$large-mobile}{
+                    opacity: 0.4;
+                }
+            }
+            & img{
+                width: 100%;
+                transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+                // Responsive
+                @media #{$large-mobile}{
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+    & .banner-content {
+        text-align: left;
+        padding: 50px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translateY(20%);
+        max-width: 530px;
+        z-index: 3;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        // Responsive
+        @media #{$large-mobile}{
+            padding: 25px;
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0%);
+        }
+        & .title{
+            font-size: 56px;
+            line-height: 56px;
+            letter-spacing: 1px;
+            color: $white;
+            margin: 0px 0px 20px 0px;
+            // Responsive
+            @media #{$laptop-device}{
+                font-size: 36px;
+                line-height: 36px;
+            }
+            @media #{$desktop-device}{
+                font-size: 30px;
+                line-height: 30px;
+            }
+            @media #{$tablet-device}{
+                font-size: 30px;
+                line-height: 30px;
+            }
+            @media #{$large-mobile}{
+                font-size: 26px;
+                line-height: 26px;
+            }
+        }
+        & p{
+            font-size: 18px;
+            line-height: 37px;
+            color: $white;
+            margin-bottom: 30px;
+            // Responsive
+            @media #{$laptop-device}{
+                font-size: 16px;
+                line-height: 36px;
+            }
+            @media #{$desktop-device}{
+                font-size: 16px;
+                line-height: 32px;
+            }
+            @media #{$tablet-device}{
+                font-size: 16px;
+                line-height: 32px;
+            }
+            @media #{$large-mobile}{
+                font-size: 14px;
+                line-height: 28px;
+            }
+        }
+        & .banner-btn{
+            border: 2px solid rgba(225,225,225,0.3);
+            background: none;
+            display: inline-block;
+            font-weight: 700;
+            padding: 15px 30px;
+            width: 200px;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 600;
+            color: $white;
+            text-align: center;
+            @media #{$large-mobile}{
+                font-size: 12px;
+                line-height: 24px;
+                padding: 12px 25px;
+                width: 160px;
+            }
+            &:hover{
+                background-color: $heading-color;
+                border-color: $heading-color;
+            }
+        }
+    }
+    &:hover{
+        & .banner-img{
+            a{
+                &::before{
+                    opacity: 0.4;
+                }
+                & img{
+                    transform: scale(1.05);
+                }
+            }
+        } 
+        & .banner-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0%);
+        }
+    }
+}
+
+/* Shop Intro Banner */
+.shop-intro-banner-content{
+    padding-bottom: 225px;
+    margin-left: -45px;
+    // Responsive
+    @media #{$laptop-device}{
+        margin-left: 95px;
+    }
+    @media #{$desktop-device}{
+        margin-left: 75px;
+    }
+    @media #{$tablet-device}{
+        margin-left: 0px;
+    }
+    @media #{$large-mobile}{
+        margin-left: 0px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+    & .title{
+        font-family: "Playfair Display", Sans-serif;
+        font-size: 180px;
+        font-weight: 400;
+        line-height: 152px;
+        color: #a17f25;
+        margin-bottom: 140px;
+        // Responsive
+        @media #{$laptop-device}{
+            font-size: 80px;
+            line-height: 100px;
+            margin-bottom: 60px;
+        }
+        @media #{$desktop-device}{
+            font-size: 60px;
+            line-height: 96px;
+            margin-bottom: 60px;
+        }
+        @media #{$tablet-device}{
+            font-size: 60px;
+            line-height: 72px;
+            margin-bottom: 40px;
+        }
+        @media #{$large-mobile}{
+            font-size: 30px;
+            line-height: 48px;
+            margin-bottom: 20px;
+        }
+    }
+}
+.shop-intro-image{
+    position: relative;
+    margin-right: -45px;
+    // Responsive
+    @media #{$laptop-device}{
+        margin-right: 95px;
+        text-align: right;
+
+    }
+    @media #{$desktop-device}{
+        margin-right: 75px;
+        text-align: right;
+
+    }
+    @media #{$tablet-device}{
+        margin-right: 0px;
+        text-align: right;
+    }
+    @media #{$large-mobile}{
+        margin-right: 0px;
+        text-align: center;
+    }
+    & img{
+        width: 740px;
+        // Responsive
+        @media #{$laptop-device}{
+            width: 500px;
+        }
+        @media #{$desktop-device}{
+            width: 500px;
+        }
+        @media #{$tablet-device}{
+            width: 500px;
+        }
+        @media #{$large-mobile}{
+            width: 280px;
+        }
+    }
+    & span{
+            position: absolute;
+            top: 78%;
+            transform: translateY(-78%) translateX(-60%);
+            left: 60%;
+            z-index: 1;
+            width: 220px;
+            color: $heading-color;
+            font-size: 24px;
+            font-weight: 400;
+            // Responsive
+            @media #{$laptop-device}{
+                font-size: 18px;
+            }
+            @media #{$desktop-device}{
+                font-size: 18px;
+            }
+            @media #{$tablet-device}{
+                font-size: 18px;
+            }
+            @media #{$large-mobile}{
+                font-size: 18px;
+            }
+    }
+}
+.shop-intro-banner-content-two{
+    // Responsive
+    @media #{$large-mobile}{
+        margin-top: 30px;
+        text-align: center;
+    }
+    & .title{
+        font-family: "Playfair Display", Sans-serif;
+        font-size: 100px;
+        font-weight: 400;
+        line-height: 104px;
+        color: #a17f25;
+        max-width: 680px;
+        // Responsive
+        @media #{$laptop-device}{
+            font-size: 60px;
+            line-height: 100px;
+            max-width: 500px;
+        }
+        @media #{$desktop-device}{
+            font-size: 40px;
+            line-height: 100px;
+            max-width: 500px;
+        }
+        @media #{$tablet-device}{
+            font-size: 40px;
+            line-height: 80px;
+            max-width: 500px;
+        }
+        @media #{$large-mobile}{
+            font-size: 30px;
+            line-height: 48px;
+        }
+    }
+    & .title-black{
+        font-family: "Playfair Display", Sans-serif;
+        font-size: 100px;
+        font-weight: 400;
+        line-height: 104px;
+        max-width: 680px;
+        margin-bottom: 150px;
+        // Responsive
+        @media #{$laptop-device}{
+            font-size: 60px;
+            line-height: 60px;
+            max-width: 380px;
+            margin-bottom: 60px;
+        }
+        @media #{$desktop-device}{
+            font-size: 40px;
+            line-height: 40px;
+            max-width: 380px;
+            margin-bottom: 60px;
+        }
+        @media #{$tablet-device}{
+            font-size: 40px;
+            line-height: 40px;
+            max-width: 380px;
+            margin-bottom: 40px;
+        }
+        @media #{$large-mobile}{
+            font-size: 30px;
+            line-height: 48px;
+            margin-bottom: 20px;
+        }
+    }
+}
+.shop-intro-image-two{
+    position: relative;
+    // Responsive
+    @media #{$large-mobile}{
+        text-align: center;
+    }
+    & img{
+        // Responsive
+        @media #{$laptop-device}{
+            width: 500px;
+        }
+        @media #{$desktop-device}{
+            width: 500px;
+        }
+        @media #{$tablet-device}{
+            width: 500px;
+        }
+        @media #{$large-mobile}{
+            width: 380px;
+        }
+    }
+    & .caption-two{
+        position: absolute;
+        top: 86%;
+        transform: translateY(-86%) translateX(-70%);
+        left: 70%;
+        z-index: 1;
+        color: $heading-color;
+        font-size: 24px;
+        font-weight: 400;
+        // Responsive
+        @media #{$laptop-device}{
+            font-size: 18px;
+        }
+        @media #{$desktop-device}{
+            font-size: 18px;
+        }
+        @media #{$tablet-device}{
+            font-size: 18px;
+        }
+        @media #{$large-mobile}{
+            font-size: 18px;
+        }
+    }
+}
+.shop-intro-banner-content-three{
+    padding-left: 165px;
+    // Responsive
+    @media #{$laptop-device}{
+        padding-left: 0;
+    }
+    @media #{$desktop-device}{
+        padding: 0px 0px 0px 80px;
+    }
+    @media #{$tablet-device}{
+        padding: 0px 0px 0px 0px;
+    }
+    @media #{$large-mobile}{
+        padding: 0px 0px 0px 0px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    & .title{
+        font-family: "Playfair Display", Sans-serif;
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 107px;
+        // Responsive
+        @media #{$laptop-device}{
+            font-size: 60px;
+            line-height: 72px;
+        }
+        @media #{$desktop-device}{
+            font-size: 40px;
+            line-height: 40px;
+        }
+        @media #{$tablet-device}{
+            font-size: 40px;
+            line-height: 40px;
+        }
+        @media #{$large-mobile}{
+            font-size: 30px;
+            line-height: 30px;
+        }
+        & span{
+            color: #a17f25;
+        }
+    }
+    & .sub-title{
+        color: #a17f25;
+        font-family: "Playfair Display", Sans-serif;
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 107px;
+        margin-bottom: 150px;
+        // Responsive
+        @media #{$laptop-device}{
+            font-size: 60px;
+            line-height: 72px;
+            margin-bottom: 60px;
+        }
+        @media #{$desktop-device}{
+            font-size: 40px;
+            line-height: 72px;
+            margin-bottom: 60px;
+        }
+        @media #{$tablet-device}{
+            font-size: 40px;
+            line-height: 72px;
+            margin-bottom: 40px;
+        }
+        @media #{$large-mobile}{
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+    }
+}
+.shop-intro-banner-content-four{
+    padding-left: 165px;
+    // Responsive
+    @media #{$laptop-device}{
+        padding: 0px 80px 0px 80px;
+    }
+    @media #{$desktop-device}{
+        padding: 0px 0px 0px 80px;
+    }
+    @media #{$tablet-device}{
+        padding: 0px 0px 0px 0px;
+    }
+    @media #{$large-mobile}{
+        padding: 0px 0px 0px 0px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    & .title{
+        font-family: "Playfair Display", Sans-serif;
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 107px;
+        color: #4d4d4d;
+        margin-bottom: 150px;
+        max-width: 680px;
+        // Responsive
+        @media #{$laptop-device}{
+            font-size: 60px;
+            line-height: 96px;
+            margin-bottom: 60px;
+        }
+        @media #{$desktop-device}{
+            font-size: 40px;
+            line-height: 64px;
+            margin-bottom: 60px;
+        }
+        @media #{$tablet-device}{
+            font-size: 40px;
+            line-height: 64px;
+            margin-bottom: 40px;
+        }
+        @media #{$large-mobile}{
+            font-size: 30px;
+            line-height: 48px;
+            margin-bottom: 20px;
+        }
+        
+    }
+}
+.shop-intro-banner-content-five{
+    margin-left: -70px;
+    // Responsive
+    @media #{$laptop-device}{
+        margin-left: 80px;
+    }
+    @media #{$desktop-device}{
+        margin-left: 80px;
+    }
+    @media #{$tablet-device}{
+        margin-left: 0px;
+    }
+    @media #{$large-mobile}{
+        margin-left: 0px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    & .title{
+        font-family: "Playfair Display", Sans-serif;
+        font-size: 100px;
+        font-weight: 400;
+        line-height: 107px;
+        // Responsive
+        @media #{$laptop-device}{
+            font-size: 60px;
+            line-height: 60px;
+        }
+        @media #{$desktop-device}{
+            font-size: 40px;
+            line-height: 40px;
+        }
+        @media #{$tablet-device}{
+            font-size: 40px;
+            line-height: 40px;
+        }
+        @media #{$large-mobile}{
+            font-size: 30px;
+            line-height: 30px;
+        }
+    }
+    & .sub-title{
+        color: #a17f25;
+        font-family: "Playfair Display", Sans-serif;
+        font-size: 100px;
+        font-weight: 400;
+        line-height: 107px;
+        margin-bottom: 150px;
+        // Responsive
+        @media #{$laptop-device}{
+            font-size: 60px;
+            line-height: 60px;
+            margin-bottom: 60px;
+        }
+        @media #{$desktop-device}{
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 60px;
+        }
+        @media #{$tablet-device}{
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 40px;
+        }
+        @media #{$large-mobile}{
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+    }
+}
+.shop-intro-image-five{
+    margin-right: -70px;
+    // Responsive
+    @media #{$laptop-device}{
+        margin-right: 0px;
+    }
+    @media #{$desktop-device}{
+        margin-right: 0px;
+    }
+    @media #{$tablet-device}{
+        margin-right: 0px;
+    }
+    @media #{$large-mobile}{
+        margin-right: 0px;
+    }
+    & img{
+        // Responsive
+        @media #{$laptop-device}{
+            width: 500px;
+        }
+        @media #{$desktop-device}{
+            width: 500px;
+        }
+        @media #{$tablet-device}{
+            width: 500px;
+        }
+    }
+}
+.shop-intro-banner-content-six{
+    // Responsive
+    @media #{$large-mobile}{
+        text-align: center;
+    }
+    & .title{
+        font-size: 24px;
+        line-height: 33px;
+        // Responsive
+        @media #{$desktop-device}{
+            font-size: 18px;
+            line-height: 25px;
+        }
+        @media #{$tablet-device}{
+            font-size: 18px;
+            line-height: 25px;
+        }
+        @media #{$large-mobile}{
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+    & .discount-title{
+        font-size: 130px;
+        line-height: 130px;
+        // Responsive
+        @media #{$desktop-device}{
+            font-size: 74px;
+            line-height: 74px;
+        }
+        @media #{$tablet-device}{
+            font-size: 74px;
+            line-height: 74px;
+        }
+        @media #{$large-mobile}{
+            font-size: 70px;
+            line-height: 70px;
+        }
+    }
+    & a{
+        margin-top: 45px;
+        // Responsive
+        @media #{$desktop-device}{
+            margin-top: 30px;
+        }
+        @media #{$tablet-device}{
+            margin-top: 20px;
+        }
+        @media #{$large-mobile}{
+            margin-top: 20px;
+        }
+    }
+}
+.shop-intro-image-six{
+    position: relative;
+    & .caption-three{
+        position: absolute;
+        top: 10%;
+        right: 15px;
+        transform: translateY(-10%);
+        font-size: 24px;
+        color: $heading-color;
+        z-index: 1;
+    }
+}
+
+/* Banner nav Css */
+.banner-nav{
+    position: fixed;
+    top: 50%;
+    left: auto;
+    right: 60px;
+    margin-right: 20px;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: auto;
+    // Responsive
+    @media #{$desktop-device}{
+        right: 0;
+    }
+    @media #{$tablet-device}{
+        right: 0;
+        margin-right: 10px;
+    }
+    @media #{$large-mobile}{
+        display: none;
+    }
+    & ul{
+        & li{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: visible !important;
+            margin: 5px 0;
+            &.active{
+                & a{
+                    color: #000000;
+                }
+                & span{
+                    width: 40px;
+                    height: 2px;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #a17f25;
+                    color: #a17f25;
+                }
+            }
+            & span{
+                width: 40px;
+                height: 2px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(0,0,0,0);
+                color: #23a455;
+            }
+            & a{
+                display: block;
+                color: $heading-color;
+                padding: 0 10px;
+                width: 50px;
+                height: 35px;
+                text-align: right;
+                color: #a5a5a5;
+                font-size: 22px;
+                line-height: 35px;
+                font-weight: 400;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}

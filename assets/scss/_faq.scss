@@ -1,0 +1,47 @@
+/*----------------------------------------*/
+/*  21. Faq CSS
+/*----------------------------------------*/
+/* Faq CSS */
+.faq-content{
+  & .title{
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 25px;
+    // Responsive
+    @media #{$tablet-device}{
+      margin-bottom: 15px;
+    }
+    @media #{$large-mobile}{
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 15px;
+    }
+  }
+  & p{
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+.help-content{
+  text-align: center;
+  & h2{
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    // Responsive
+    @media #{$large-mobile}{
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+  & a{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+    &:hover{
+      background: $theme-color-two;
+      border-color: $theme-color-two;
+      color: $white;
+    }
+  }
+}

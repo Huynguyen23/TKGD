@@ -1,0 +1,79 @@
+/*----------------------------------------*/
+/*  05. Feature CSS
+/*----------------------------------------*/
+
+
+/* Single Features CSS */
+.single-feature {
+    text-align: center;
+    &.style-two{
+        & .feature-content{
+            & .title{
+                font-size: 18px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 700;
+                margin-bottom: 8px;
+                // Responsive
+                @media #{$laptop-device}{
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+                @media #{$large-mobile}{
+                    font-size: 14px;
+                }
+            }
+            & p{
+                color: #919191;
+                font-size: 16px;
+                font-weight: 400;
+                // Responsive
+                @media #{$laptop-device}{
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+                @media #{$large-mobile}{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    & .feature-icon{
+        display: inline-block;
+        line-height: 1;
+        transition: all .5s;
+        color: $heading-color;
+        font-size: 50px;
+        margin-bottom: 20px;
+        // Responsive
+        @media #{$large-mobile}{
+            margin-bottom: 5px;
+        }
+        & i{
+            
+        }
+    }
+    & .feature-content{
+        & .title{
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            // Responsive
+            @media #{$large-mobile}{
+                font-size: 14px;
+            }
+        }
+        & p{
+            color: #919191;
+            font-size: 16px;
+            font-weight: 400;
+            // Responsive
+            @media #{$large-mobile}{
+                font-size: 12px;
+            }
+        }
+    }
+}
+

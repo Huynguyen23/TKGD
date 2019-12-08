@@ -1,0 +1,82 @@
+/*----------------------------------------*/
+/*  28. Warranty CSS
+/*----------------------------------------*/
+.warranty-content{
+    // Responsive
+    @media #{$large-mobile}{
+        text-align: center;
+    }
+    & .title{
+        font-size: 64px;
+        line-height: 90px;
+        color: $white;
+        letter-spacing: 2px;
+        margin-bottom: 35px;
+        // Responsive
+        @media #{$tablet-device}{
+            font-size: 32px;
+            line-height: 45px;
+            margin-bottom: 20px;
+        }
+        @media #{$large-mobile}{
+            font-size: 24px;
+            line-height: 33px;
+            margin-bottom: 15px;
+        }
+    }
+    & p{
+        font-size: 24px;
+        line-height: 43px;
+        color: $white;
+        max-width: 600px;
+        margin-bottom: 50px;
+        // Responsive
+        @media #{$tablet-device}{
+            font-size: 17px;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+        @media #{$large-mobile}{
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+    }
+    & .warranty-btn{
+        background-color: rgba(26, 26, 26, 0);
+        color: $white;
+        padding: 20px 40px;
+        border: 2px solid $white;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 12px;
+        display: inline-block;
+        // Responsive
+        @media #{$tablet-device}{
+            font-size: 14px;
+        }
+        @media #{$large-mobile}{
+            font-size: 12px;
+            padding: 15px 30px 15px 30px;
+        }
+        &:hover{
+            background-color: $heading-color;
+            border-color: $heading-color;
+        }
+    }
+}
+.warranty-image{
+    // Responsive
+    @media #{$large-mobile}{
+        margin-top: 30px;
+        text-align: center;
+    }
+    & img{
+        width: 195px;
+        // Responsive
+        @media #{$large-mobile}{
+            width: 100px;
+        }
+    }
+}

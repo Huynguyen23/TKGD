@@ -1,0 +1,206 @@
+/*----------------------------------------*/
+/*  18. Coming Soon CSS
+/*----------------------------------------*/
+.coming-soon-section{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    // Responsive
+    @media #{$large-mobile}{
+        height: auto;
+        padding: 200px 0;
+    }
+}
+.coming-soon-image{
+    // Responsive
+    @media #{$large-mobile}{
+        height: 400px;
+    }
+}
+.coming-soon-desc{
+    padding: 0 90px;
+    padding-top: 205px;
+    // Responsive
+    @media #{$extra-device}{
+        padding: 0 50px;
+        padding-top: 150px;
+    }
+    @media #{$laptop-device}{
+        padding: 0 15px;
+        padding-top: 80px;
+    }
+    @media #{$desktop-device}{
+        padding: 0 15px;
+        padding-top: 70px;
+    }
+    @media #{$tablet-device}{
+        padding: 0 15px;
+        padding-top: 60px;
+    }
+    @media #{$large-mobile}{
+        padding: 0 15px;
+        padding-top: 50px;
+    }
+}
+.coming-soon-content-area{
+    text-align: left;
+    & h2{
+        font-size: 68px;
+        line-height: 81px;
+        max-width: 550px;
+        margin-bottom: 15px;
+        color: $white;
+        margin-bottom: 50px;
+        //Responsive
+        @media #{$large-mobile}{
+            font-size: 34px;
+            line-height: 40px;
+            margin-bottom: 30px;
+        }
+    }
+    &.black-color{
+        & h2{
+            color: $heading-color;
+            font-weight: 700;
+            //Responsive
+            @media #{$desktop-device}{
+                font-size: 50px;
+                line-height: 60px;
+            }
+            @media #{$large-mobile}{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+.cs-countdown {
+	margin-bottom: 50px;
+    text-align: left;
+    // Responsive
+    @media #{$large-mobile}{
+        margin-bottom: 30px;
+    }
+    &.black-color{
+        // Responsive
+        @media #{$large-mobile}{
+            margin-bottom: 0px;
+        }
+        & .countdown-wrap{
+            & > div{
+                display: inline-block;
+                text-align: center;
+                
+                & + div{
+                    width: 110px;
+                    height: 75px;
+                    text-align: center;
+                    margin: 10px;
+                    //Responsive
+                    @media #{$desktop-device}{
+                        width: 90px;
+                        height: 60px;
+                    }
+                    @media #{$large-mobile}{
+                        width: 70px;
+                        height: 40px;
+                        margin: 30px 0px 30px 0px;
+                    }
+                }
+            }
+            
+        }
+        & .number{
+            color: $heading-color;
+        }
+        & .text{
+            color: $heading-color;
+        } 
+    }
+    & .countdown-wrap{
+        & > div{
+            display: inline-block;
+            text-align: center;
+            
+            & + div{
+                width: 110px;
+                height: 75px;
+                text-align: center;
+                margin: 10px;
+                //Responsive
+                @media #{$large-mobile}{
+                    width: 70px;
+                    height: 50px;
+                    margin: 30px 0px 30px 0px;
+                }
+            }
+        }
+        
+    }
+    & .number{
+        font-size: 49px;
+        line-height: 49px;
+        color: $white;
+        display: block;
+        //Responsive
+        @media #{$large-mobile}{
+            font-size: 22px;
+            line-height: 1;
+        }
+    }
+    & .text{
+        display: block;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: $white;
+    }
+}
+
+.cs-form{
+    &.black-color{
+        & .news-latter-form{
+            border-bottom: 1px solid $heading-color;
+            & form{
+                & input{
+                    color: $heading-color;
+                }
+                & button{
+                    color: $heading-color;
+                }
+            }
+        }
+    }
+    & .news-latter-form{
+        max-width: 550px;
+        padding: 10px 0;
+        border-bottom: 1px solid $white;
+        & form{
+            display: flex;
+            & input{
+                padding: 0px 0px 0px 0px;
+                background-color: rgba(0,0,0,0);
+                color: $white;
+                font-size: 12px;
+                font-weight: 400;
+                border-style: solid;
+                border-width: 0px 0px 0px 0px;
+                width: 100%;
+            }
+            & button{
+                font-size: 14px;
+                line-height: 19px;
+                font-weight: 700;
+                color: $white;
+                padding: 0;
+                border: 0;
+                margin-left: 10px;
+            }
+        }
+    }
+}

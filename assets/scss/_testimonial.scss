@@ -1,0 +1,243 @@
+/*----------------------------------------*/
+/*  10. Testimonial CSS
+/*----------------------------------------*/
+// Testimonial
+/*-- Testimonial Slider Dot --*/
+
+/*-- Testimonial Slider Image --*/
+.testimonial-slider-image {
+    max-width: 225px;
+    margin: auto;
+    float: none;
+    overflow: hidden;
+    &.image-border{
+        & .testimonial{
+            &.slick-current{
+                & .image{
+                    border: 5px solid #FFE49E;
+                }
+            }
+        }
+    }
+    & .testimonial{
+        text-align: center;
+        & .image {
+            width: 65px;
+            opacity: .3;
+            margin: 0 10px;
+            display: block;
+            overflow: hidden;
+            border-radius: 50%;
+            transition: all 0.3s ease 0s;
+            & img {
+                width: 100%;
+                border-radius: 50%;
+            }
+            // Responsive
+            @media #{$extra-small-mobile}{
+                width: 65px;
+            }
+        }
+        &.slick-center {
+            & .image {
+                opacity: 1;
+            }
+        }
+    }
+}
+.testimonial__style{
+    text-align: center;
+    .thumbnail{
+        width: 55px;
+        height: 55px;
+        max-width: 100%;
+        object-fit: cover;
+        margin: 0 auto;
+        & img{
+            border-radius: 100%;
+        }
+    }
+    .testimonial-info{
+        & > p {
+            font-size: 28px;
+            line-height: 56px;
+            max-width: 1150px;
+            padding: 0 50px;
+            border-radius: 0;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            // Responsive
+            @media #{$desktop-device}{
+                font-size: 24px;
+                line-height: 48px;
+            }
+            @media #{$tablet-device}{
+                font-size: 24px;
+                line-height: 48px;
+                padding: 0;
+            }
+            @media #{$large-mobile}{
+                font-size: 16px;
+                line-height: 30px;
+                padding: 0;
+                margin-bottom: 20px;
+            }
+        }
+        .info{
+            margin-top: 10px;
+            &.fz-18{
+                & p{
+                    & span{
+                        font-size: 16px;
+                        line-height: 27px;
+                        font-weight: 700;
+                    }
+                }
+            }
+            & p{
+                & span{
+                    font-size: 24px;
+                    line-height: 41px;
+                    margin: 0 5px;
+                    @media #{$large-mobile}{
+                        font-size: 18px;
+                        line-height: 34px;
+                    }
+                }
+            }
+        }
+    }
+}
+.testimonial__style__two{
+    text-align: center;
+    .testimonial-info{
+        & > p {
+            position: relative;
+            font-size: 28px;
+            line-height: 56px;
+            font-family: "Playfair Display", Sans-serif;
+            font-style: italic;
+            max-width: 1150px;
+            padding: 0 50px;
+            border-radius: 0;
+            margin: 0 auto;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            color: $white;
+            &::after{
+                content: '';
+                height: 0;
+                width: 0;
+                display: block;
+                position: absolute;
+                border: 0 solid;
+                border-color: rgba(204,204,204,0.5);
+                left: 50%;
+                border-right-width: 72px;
+                margin-left: calc(72px/-2);
+                border-top-width: 2px;
+                bottom: -2px;
+                border-left-width: 10px;
+            }
+            // Responsive
+            @media #{$desktop-device}{
+                font-size: 24px;
+                line-height: 48px;
+            }
+            @media #{$tablet-device}{
+                font-size: 24px;
+                line-height: 48px;
+                padding: 0;
+            }
+            @media #{$large-mobile}{
+                font-size: 16px;
+                line-height: 30px;
+                padding: 0;
+                margin-bottom: 20px;
+            }
+        }
+        .info{
+            margin-top: 10px;
+            & p{
+                color: $white;
+                & span{
+                    font-size: 16px;
+                    line-height: 27px;
+                    margin: 0 5px;
+                    @media #{$large-mobile}{
+                        font-size: 18px;
+                        line-height: 34px;
+                    }
+                }
+            }
+        }
+    }
+}
+.testimonial__style__three{
+    text-align: center;
+    .testimonial-info{
+        &.color-white{
+            & p{
+                color: $white;
+            }
+            & .info{
+                & p{
+                    color: #fce49e;
+                    & span{
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 24px;
+            line-height: 55px;
+            max-width: 980px;
+            padding: 0 50px;
+            border-radius: 0;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            // Responsive
+            @media #{$desktop-device}{
+                font-size: 18px;
+                line-height: 36px;
+            }
+            @media #{$tablet-device}{
+                font-size: 18px;
+                line-height: 36px;
+                padding: 0;
+            }
+            @media #{$large-mobile}{
+                font-size: 16px;
+                line-height: 30px;
+                padding: 0;
+                margin-bottom: 20px;
+            }
+        }
+        .info{
+            margin-top: 10px;
+            & p{
+                color: #a17f25;
+                & span{
+                    font-size: 24px;
+                    line-height: 41px;
+                    margin: 0 5px;
+                    @media #{$large-mobile}{
+                        font-size: 18px;
+                        line-height: 34px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

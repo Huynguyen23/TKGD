@@ -1,0 +1,130 @@
+/*---------------------------------------
+    32. Modal CSS
+-----------------------------------------*/
+.modal {
+	display: block !important;
+	overflow: hidden;
+	visibility: hidden;
+	opacity: 0;
+    transition: none;
+    &.show {
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s ease 0s;
+    }
+}
+
+.modal-content {
+	border: none;
+	border-radius: 0;
+}
+.modal-dialog {
+	margin: 13px auto;
+	max-width: 1300px;
+	width: 1300px;
+    @media #{$laptop-device} {
+        width: 1100px;
+        max-width: 1100px;
+    }
+    @media #{$desktop-device} {
+        width: 960px;
+        max-width: 960px;
+    }
+    @media #{$tablet-device} {
+        width: 720px;
+        max-width: 720px;
+    }
+    @media #{$large-mobile} {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 0;
+    }
+    .modal-body {
+        padding: 30px 30px;
+        @media #{$large-mobile} {
+            padding: 30px 15px;
+        }
+    }
+}
+.modal-header {
+    padding: 15px 15px 20px;
+    border-bottom: none;
+    @media #{$desktop-device} {
+        padding: 15px 15px 10px;
+    }
+    @media #{$large-mobile} {
+        padding: 15px 15px 20px;
+    }
+    .close {
+        color: rgba(255,255,255,.6);
+        cursor: pointer;
+        font-size: 38px;
+        text-shadow: 0 0 15px transparent;
+        opacity: .9;
+        &:hover {
+            color: $theme-color-two;
+            text-shadow: 0 0 15px #fff;
+            opacity: 1;
+        }
+    }
+}
+.modal-backdrop {
+	background-color: #333;
+    &.show {
+        opacity: .9;
+    }
+}
+.quickview-img-wrap {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+.quickview-small-img-slider {
+    width: 68px;
+    float: left;
+    display: block;
+    margin-top: 35px;
+    .single-small-img {
+        margin-bottom: 11px;
+        img {
+            width: 100%;
+        }
+        &.slick-active {
+            border: 1px solid transparent;
+            &.slick-current {
+                border: 1px solid $theme-color-two;
+            }
+        }
+    }
+}
+
+.quickview-big-img-slider {
+    width: calc(100% - 68px);
+    padding-left: 30px;
+    float: left;
+    @media #{$tablet-device} {
+        padding-left: 15px;
+    }
+    @media #{$large-mobile} {
+        padding-left: 15px;
+    }
+    .single-big-img {
+        img {
+            width: 100%;
+        }
+    }
+}
+.quickview-content {
+    @media #{$large-mobile} {
+        margin-top: 20px;
+    }
+}
+
+
+.tooltip {
+    .tooltip-inner {
+        padding: 0px 12px 2px;
+        background-color: #000;
+        font-size: 14px;
+    }
+}
